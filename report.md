@@ -52,8 +52,6 @@ Since the unit for these numiercal variables are **PDV**, which is **Percentage 
 
 ---
 
----
-
 # Baseline Model 
 
 ### description of our model
@@ -90,8 +88,6 @@ R-squared on test data: 0.5716317971225593
 Based on the performance, firstly, we can see that R-squared values for both train and test data are relatively close, indicating that our baseline model is not overfitting the training data and is performing consistently on unseen data.
 
 Secondly, although the R-squared value isn't very close to 1, it is still a decent value, indicating that our baseline model is in the right direction for prediction and can perform better after improvement in the final model.  
-
----
 
 ---
 
@@ -177,6 +173,5 @@ Compared to the baseline model, our final model incorporates additional features
 
 ---
 
----
 
 # Fairness Analysis 
