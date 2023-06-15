@@ -156,7 +156,22 @@ The overall model consists of a preprocessing pipeline that includes feature tra
 
 ### Performance of our final model
 
-| Hyperparameters              |    Score |\n|:-----------------------------|---------:|\n| {'regressor__max_depth': 1}  | 0.451636 |\n| {'regressor__max_depth': 2}  | 0.6793   |\n| {'regressor__max_depth': 3}  | 0.818093 |\n| {'regressor__max_depth': 4}  | 0.878214 |\n| {'regressor__max_depth': 5}  | 0.906364 |\n| {'regressor__max_depth': 6}  | 0.923514 |\n| {'regressor__max_depth': 7}  | 0.931208 |\n| {'regressor__max_depth': 8}  | 0.935237 |\n| {'regressor__max_depth': 9}  | 0.936823 |\n| {'regressor__max_depth': 10} | 0.936893 |\n| {'regressor__max_depth': 11} | 0.936306 |\n| {'regressor__max_depth': 12} | 0.93512  |\n| {'regressor__max_depth': 13} | 0.933842 |\n| {'regressor__max_depth': 14} | 0.932574 |
+| Hyperparameters              |    Score |
+|:-----------------------------|---------:|
+| {'regressor__max_depth': 1}  | 0.451636 |
+| {'regressor__max_depth': 2}  | 0.6793   |
+| {'regressor__max_depth': 3}  | 0.818093 |
+| {'regressor__max_depth': 4}  | 0.878214 |
+| {'regressor__max_depth': 5}  | 0.906364 |
+| {'regressor__max_depth': 6}  | 0.923514 |
+| {'regressor__max_depth': 7}  | 0.931208 |
+| {'regressor__max_depth': 8}  | 0.935237 |
+| {'regressor__max_depth': 9}  | 0.936823 |
+| {'regressor__max_depth': 10} | 0.936893 |
+| {'regressor__max_depth': 11} | 0.936306 |
+| {'regressor__max_depth': 12} | 0.93512  |
+| {'regressor__max_depth': 13} | 0.933842 |
+| {'regressor__max_depth': 14} | 0.932574 |
 
 Compared to the baseline model, our final model incorporates additional features, improves the preprocessing process by handling skewed data, and utilizes a more advanced algorithm to search for the best combinations of hyperparameters. The performance of the final model is improved in terms of R-squarted value from around 0.5689925700915398 for training data and 0.5716317971225593 for testing data, to 0.9482785438528416for training data and 0.9465126831231441 for test data. 
 
