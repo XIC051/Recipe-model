@@ -143,7 +143,7 @@ Also, we keep the transformation and encoding of columns `tags` to check for "ma
 
 ## Modeling Algorithm
 
-We chose to use **RandomForestRegressor** as our final model, which is an ensemble method based on decision trees. The **hyperparameter** that ended up performing the best was 'max_depth' with a value of **10** and 'n_estimators' with a value of **100**, as determined by GridSearchCV.
+We chose to use **RandomForestRegressor** as our final model, which is an ensemble method based on decision trees. The **hyperparameter** that ended up performing the best was 'max_depth' with a value of **10** and 'n_estimators' with a value of **400**, as determined by GridSearchCV.
 
 To select the best hyperparameters, we performed a grid search using cross-validation with 5 folds. The range of 'max_depth' hyperparameter was set from 1 to 14, and the range of 'n_estimators' was set from 100 to 400 with an increase of 100 each time, and the model was trained and evaluated on each combination of hyperparameters. The best performing hyperparameter value was selected based on the mean cross-validated score. 
 
@@ -219,7 +219,7 @@ The overall model consists of a preprocessing pipeline that includes feature tra
 
 
 
-Compared to the baseline model, our final model incorporates additional features, improves the preprocessing process by handling skewed data, and utilizes a more advanced algorithm to search for the best combinations of hyperparameters. The performance of the final model is improved in terms of R-squarted value from around **0.5689925700915398** for training data and **0.5716317971225593** for testing data, to  **0.9485654027270435** for training data and **0.9465151882466886** for testing data. 
+Compared to the baseline model, our final model incorporates additional features, improves the preprocessing process by handling skewed data, and utilizes a more advanced algorithm to search for the best combinations of hyperparameters. The performance of the final model is improved in terms of R-squarted value from around **0.5689925700915398** for training data and **0.5716317971225593** for testing data, to  **0.9486009222505515** for training data and **0.9466226769946644** for testing data. 
 
 ---
 
