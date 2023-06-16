@@ -151,65 +151,36 @@ The overall model consists of a preprocessing pipeline that includes feature tra
 
 
 ## Performance of our final model
-| Hyperparameters                        |    Score |
-|:---------------------------------------|---------:|
-| {'max_depth': 1, 'n_estimators': 100}  | 0.452362 |
-| {'max_depth': 1, 'n_estimators': 200}  | 0.451461 |
-| {'max_depth': 1, 'n_estimators': 300}  | 0.452278 |
-| {'max_depth': 1, 'n_estimators': 400}  | 0.451751 |
-| {'max_depth': 2, 'n_estimators': 100}  | 0.678425 |
-| {'max_depth': 2, 'n_estimators': 200}  | 0.679491 |
-| {'max_depth': 2, 'n_estimators': 300}  | 0.679122 |
-| {'max_depth': 2, 'n_estimators': 400}  | 0.679408 |
-| {'max_depth': 3, 'n_estimators': 100}  | 0.817764 |
-| {'max_depth': 3, 'n_estimators': 200}  | 0.818262 |
-| {'max_depth': 3, 'n_estimators': 300}  | 0.817589 |
-| {'max_depth': 3, 'n_estimators': 400}  | 0.818129 |
-| {'max_depth': 4, 'n_estimators': 100}  | 0.878399 |
-| {'max_depth': 4, 'n_estimators': 200}  | 0.87864  |
-| {'max_depth': 4, 'n_estimators': 300}  | 0.87863  |
-| {'max_depth': 4, 'n_estimators': 400}  | 0.878463 |
-| {'max_depth': 5, 'n_estimators': 100}  | 0.907003 |
-| {'max_depth': 5, 'n_estimators': 200}  | 0.907041 |
-| {'max_depth': 5, 'n_estimators': 300}  | 0.906999 |
-| {'max_depth': 5, 'n_estimators': 400}  | 0.907066 |
-| {'max_depth': 6, 'n_estimators': 100}  | 0.923567 |
-| {'max_depth': 6, 'n_estimators': 200}  | 0.923629 |
-| {'max_depth': 6, 'n_estimators': 300}  | 0.923606 |
-| {'max_depth': 6, 'n_estimators': 400}  | 0.923562 |
-| {'max_depth': 7, 'n_estimators': 100}  | 0.931292 |
-| {'max_depth': 7, 'n_estimators': 200}  | 0.931397 |
-| {'max_depth': 7, 'n_estimators': 300}  | 0.931322 |
-| {'max_depth': 7, 'n_estimators': 400}  | 0.931343 |
-| {'max_depth': 8, 'n_estimators': 100}  | 0.935362 |
-| {'max_depth': 8, 'n_estimators': 200}  | 0.935311 |
-| {'max_depth': 8, 'n_estimators': 300}  | 0.935377 |
-| {'max_depth': 8, 'n_estimators': 400}  | 0.935413 |
-| {'max_depth': 9, 'n_estimators': 100}  | 0.936778 |
-| {'max_depth': 9, 'n_estimators': 200}  | 0.936891 |
-| {'max_depth': 9, 'n_estimators': 300}  | 0.936849 |
-| {'max_depth': 9, 'n_estimators': 400}  | 0.936866 |
-| {'max_depth': 10, 'n_estimators': 100} | 0.937294 |
-| {'max_depth': 10, 'n_estimators': 200} | 0.937065 |
-| {'max_depth': 10, 'n_estimators': 300} | 0.937077 |
-| {'max_depth': 10, 'n_estimators': 400} | 0.93708  |
-| {'max_depth': 11, 'n_estimators': 100} | 0.936033 |
-| {'max_depth': 11, 'n_estimators': 200} | 0.936269 |
-| {'max_depth': 11, 'n_estimators': 300} | 0.936329 |
-| {'max_depth': 11, 'n_estimators': 400} | 0.936408 |
-| {'max_depth': 12, 'n_estimators': 100} | 0.935215 |
-| {'max_depth': 12, 'n_estimators': 200} | 0.935169 |
-| {'max_depth': 12, 'n_estimators': 300} | 0.935242 |
-| {'max_depth': 12, 'n_estimators': 400} | 0.935262 |
-| {'max_depth': 13, 'n_estimators': 100} | 0.933632 |
-| {'max_depth': 13, 'n_estimators': 200} | 0.934054 |
-| {'max_depth': 13, 'n_estimators': 300} | 0.933971 |
-| {'max_depth': 13, 'n_estimators': 400} | 0.934022 |
-| {'max_depth': 14, 'n_estimators': 100} | 0.932692 |
-| {'max_depth': 14, 'n_estimators': 200} | 0.933167 |
-| {'max_depth': 14, 'n_estimators': 300} | 0.933069 |
-| {'max_depth': 14, 'n_estimators': 400} | 0.932996 |
-
+| Hyperparameters                       |    Score |   index | Hyperparameters                        |    Score |
+|:--------------------------------------|---------:|--------:|:---------------------------------------|---------:|
+| {'max_depth': 1, 'n_estimators': 100} | 0.452362 |      28 | {'max_depth': 8, 'n_estimators': 100}  | 0.935362 |
+| {'max_depth': 1, 'n_estimators': 200} | 0.451461 |      29 | {'max_depth': 8, 'n_estimators': 200}  | 0.935311 |
+| {'max_depth': 1, 'n_estimators': 300} | 0.452278 |      30 | {'max_depth': 8, 'n_estimators': 300}  | 0.935377 |
+| {'max_depth': 1, 'n_estimators': 400} | 0.451751 |      31 | {'max_depth': 8, 'n_estimators': 400}  | 0.935413 |
+| {'max_depth': 2, 'n_estimators': 100} | 0.678425 |      32 | {'max_depth': 9, 'n_estimators': 100}  | 0.936778 |
+| {'max_depth': 2, 'n_estimators': 200} | 0.679491 |      33 | {'max_depth': 9, 'n_estimators': 200}  | 0.936891 |
+| {'max_depth': 2, 'n_estimators': 300} | 0.679122 |      34 | {'max_depth': 9, 'n_estimators': 300}  | 0.936849 |
+| {'max_depth': 2, 'n_estimators': 400} | 0.679408 |      35 | {'max_depth': 9, 'n_estimators': 400}  | 0.936866 |
+| {'max_depth': 3, 'n_estimators': 100} | 0.817764 |      36 | {'max_depth': 10, 'n_estimators': 100} | 0.937294 |
+| {'max_depth': 3, 'n_estimators': 200} | 0.818262 |      37 | {'max_depth': 10, 'n_estimators': 200} | 0.937065 |
+| {'max_depth': 3, 'n_estimators': 300} | 0.817589 |      38 | {'max_depth': 10, 'n_estimators': 300} | 0.937077 |
+| {'max_depth': 3, 'n_estimators': 400} | 0.818129 |      39 | {'max_depth': 10, 'n_estimators': 400} | 0.93708  |
+| {'max_depth': 4, 'n_estimators': 100} | 0.878399 |      40 | {'max_depth': 11, 'n_estimators': 100} | 0.936033 |
+| {'max_depth': 4, 'n_estimators': 200} | 0.87864  |      41 | {'max_depth': 11, 'n_estimators': 200} | 0.936269 |
+| {'max_depth': 4, 'n_estimators': 300} | 0.87863  |      42 | {'max_depth': 11, 'n_estimators': 300} | 0.936329 |
+| {'max_depth': 4, 'n_estimators': 400} | 0.878463 |      43 | {'max_depth': 11, 'n_estimators': 400} | 0.936408 |
+| {'max_depth': 5, 'n_estimators': 100} | 0.907003 |      44 | {'max_depth': 12, 'n_estimators': 100} | 0.935215 |
+| {'max_depth': 5, 'n_estimators': 200} | 0.907041 |      45 | {'max_depth': 12, 'n_estimators': 200} | 0.935169 |
+| {'max_depth': 5, 'n_estimators': 300} | 0.906999 |      46 | {'max_depth': 12, 'n_estimators': 300} | 0.935242 |
+| {'max_depth': 5, 'n_estimators': 400} | 0.907066 |      47 | {'max_depth': 12, 'n_estimators': 400} | 0.935262 |
+| {'max_depth': 6, 'n_estimators': 100} | 0.923567 |      48 | {'max_depth': 13, 'n_estimators': 100} | 0.933632 |
+| {'max_depth': 6, 'n_estimators': 200} | 0.923629 |      49 | {'max_depth': 13, 'n_estimators': 200} | 0.934054 |
+| {'max_depth': 6, 'n_estimators': 300} | 0.923606 |      50 | {'max_depth': 13, 'n_estimators': 300} | 0.933971 |
+| {'max_depth': 6, 'n_estimators': 400} | 0.923562 |      51 | {'max_depth': 13, 'n_estimators': 400} | 0.934022 |
+| {'max_depth': 7, 'n_estimators': 100} | 0.931292 |      52 | {'max_depth': 14, 'n_estimators': 100} | 0.932692 |
+| {'max_depth': 7, 'n_estimators': 200} | 0.931397 |      53 | {'max_depth': 14, 'n_estimators': 200} | 0.933167 |
+| {'max_depth': 7, 'n_estimators': 300} | 0.931322 |      54 | {'max_depth': 14, 'n_estimators': 300} | 0.933069 |
+| {'max_depth': 7, 'n_estimators': 400} | 0.931343 |      55 | {'max_depth': 14, 'n_estimators': 400} | 0.932996 |
 Compared to the baseline model, our final model incorporates additional features, improves the preprocessing process by handling skewed data, and utilizes a more advanced algorithm to search for the best combinations of hyperparameters. The performance of the final model is improved in terms of R-squarted value from around **0.5689925700915398** for training data and **0.5716317971225593** for testing data, to  **0.9485654027270435** for training data and **0.9465151882466886** for testing data. 
 
 ---
