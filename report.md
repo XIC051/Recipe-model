@@ -151,7 +151,24 @@ The overall model consists of a preprocessing pipeline that includes feature tra
 
 
 ## Performance of our final model
-|    | Hyperparameters                       |    Score |\n|---:|:--------------------------------------|---------:|\n|  0 | {'max_depth': 1, 'n_estimators': 100} | 0.452362 |\n|  1 | {'max_depth': 1, 'n_estimators': 200} | 0.451461 |\n|  2 | {'max_depth': 1, 'n_estimators': 300} | 0.452278 |\n|  3 | {'max_depth': 1, 'n_estimators': 400} | 0.451751 |\n|  4 | {'max_depth': 2, 'n_estimators': 100} | 0.678425 |\n|  5 | {'max_depth': 2, 'n_estimators': 200} | 0.679491 |\n|  6 | {'max_depth': 2, 'n_estimators': 300} | 0.679122 |\n|  7 | {'max_depth': 2, 'n_estimators': 400} | 0.679408 |\n|  8 | {'max_depth': 3, 'n_estimators': 100} | 0.817764 |\n|  9 | {'max_depth': 3, 'n_estimators': 200} | 0.818262 |\n| 10 | {'max_depth': 3, 'n_estimators': 300} | 0.817589 |\n| 11 | {'max_depth': 3, 'n_estimators': 400} | 0.818129 |
+
+
+|    | Hyperparameters                       |    Score |
+|---:|:--------------------------------------|---------:|
+|  0 | {'max_depth': 1, 'n_estimators': 100} | 0.452362 |
+|  1 | {'max_depth': 1, 'n_estimators': 200} | 0.451461 |
+|  2 | {'max_depth': 1, 'n_estimators': 300} | 0.452278 |
+|  3 | {'max_depth': 1, 'n_estimators': 400} | 0.451751 |
+|  4 | {'max_depth': 2, 'n_estimators': 100} | 0.678425 |
+|  5 | {'max_depth': 2, 'n_estimators': 200} | 0.679491 |
+|  6 | {'max_depth': 2, 'n_estimators': 300} | 0.679122 |
+|  7 | {'max_depth': 2, 'n_estimators': 400} | 0.679408 |
+|  8 | {'max_depth': 3, 'n_estimators': 100} | 0.817764 |
+|  9 | {'max_depth': 3, 'n_estimators': 200} | 0.818262 |
+| 10 | {'max_depth': 3, 'n_estimators': 300} | 0.817589 |
+| 11 | {'max_depth': 3, 'n_estimators': 400} | 0.818129 |
+
+
 
 Compared to the baseline model, our final model incorporates additional features, improves the preprocessing process by handling skewed data, and utilizes a more advanced algorithm to search for the best combinations of hyperparameters. The performance of the final model is improved in terms of R-squarted value from around **0.5689925700915398** for training data and **0.5716317971225593** for testing data, to  **0.9485654027270435** for training data and **0.9465151882466886** for testing data. 
 
